@@ -1,0 +1,35 @@
+{
+  "name": "button-component-master",
+  "version": "1.0.0",
+  "description": "soiloui's button component",
+  "main": "index.html",
+  "browserslist": ">0.75%, last 2 versions, not OperaMini all, not dead",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build && fsutil file createnew docs/.nojekyll 0",
+    "deploy": "git add docs && git commit -m 'deploy' && git push -u origin main"
+  },
+  "author": "soiloui",
+  "license": "ISC",
+  "devDependencies": {
+    "@snowpack/plugin-postcss": "^1.2.2",
+    "@snowpack/plugin-typescript": "^1.2.1",
+    "@snowpack/plugin-webpack": "^2.3.1",
+    "@types/react": "^17.0.5",
+    "@types/react-dom": "^17.0.3",
+    "@types/styled-components": "^5.1.9",
+    "postcss": "^8.2.15",
+    "postcss-cli": "^8.3.1",
+    "postcss-preset-env": "^6.7.0",
+    "snowpack": "^3.3.7",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "snowpack-plugin-baseurl-handler": "0.0.3",
+    "styled-components": "^5.3.0"
+  }
+}
